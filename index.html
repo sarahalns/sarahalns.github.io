@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <title>bc</title>
+    <title>Radjo Pisang Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -11,38 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;800&display=swap" rel="stylesheet">
-    <script>
-        function validateForm()
-        {
-            var nrp = document.getElementById ("nrp");
-            var msg = document.getElementById ("msg");
-
-            //cek hanya yang invalid
-            if (nrp.value == "") {
-                nrp.focus();
-                nrp.placeholder = "contoh: 5026221071"
-                alert("NRP harus diisi");
-                return false;
-            }
-
-            //harus 10 digit 
-            //selain 10, invalid
-            if(nrp.value.length !=10)
-            {
-                nrp.focus
-                alert ("NRP harus 10 digit , Anda memasukkan " + nrp.value.length + " digit")
-                return false;
-            }
-
-            //yg ada alphabet invalid
-            if (isNan(nrp.value) == true){ //true jika ada unsur abjad, false jika angka semua
-                nrp.focus();
-                msg.innerHTML="NRP harus angka"; //innerHTML mengubah tulisan dalam tag
-                return false;
-            }
-
-        }
-    </script>
 </head>
 
 <body>
