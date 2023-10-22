@@ -12,24 +12,176 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Nunito:wght@900&family=Poppins:wght@500&display=swap" rel="stylesheet">    
 </head>
 
 <body>
     <header id="header">
         <nav class="w-full">
             <div class="flex justify-between items-center sm:px-10 md:px-20 py-3 bg-white">
-                <li style="float:left"><img src="img/logorp.png"></li>
+                    <a data-identity="logo" href="/id">
+                        <img src="logorp.png">
+                    </a>
             </div>
             <ul class="header_navbarUl md:flex flex-row justify-center bg-white bg-opacity-70 capitalize items-center sm:hidden">
-                <li class="dropdown-main flex flex-col justify-center items-center" data-identity="nav-0"><a class="whitespace-no-wrap truncate max-w-xs px-6 text-gray-700 hover:text-black transition duration-300 relative" href="#home">Menu</a></li>
-                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#location">Location</a></li>
-                <li><a href="#Menu">Menu</a></li>
-                <li><a href="#contactUs">Contact Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
             
         </nav>
     </header>
+
+    <div class="container-fluid px-0 ">
+        <!--Home Page-->
+        <div class="homepage" id="home" >
+            <h1 >Radjo Pisang</h1>
+            <h5>est.2017</h5>
+            <h3>Olahan Pisang Ter-baik dan Ter-enak No 1 Indonesia</h3>
+        </div>
+
+        <!--About Us Page-->
+        <div class="aboutpage" id="about">
+            <div class="row">
+                <div class="col-6 ">
+                    <h2>About Us</h2>
+                    <br>
+                    <p>Kami adalah penyedia olahan pisang dengan beragam topping lezat dan harga terjangkau. Menghadirkan sensasi rasa yang unik, kami memadukan kelezatan pisang dengan berbagai pilihan topping, mulai dari cokelat, keju, karamel, hingga berbagai saus spesial</p>
+                    <p>Setiap product yang kami sajikan diracik dengan cermat dan dengan bahan-bahan berkualitas tinggi. Kami berkomitmen untuk memberikan pengalaman kuliner yang tak terlupakan dengan cita rasa yang tak tertandingi</p>
+                  </div>
+                <div class="col-6">
+                    <img src="rp2.JPG" class="float-right" width="60%">
+                </div>
+            </div>
+        </div>
+
+        <!--Location Page-->
+        <div class="locationpage" id="location">
+            <div class="row">
+                <h3 class="text-white mx-auto">OUR LOCATION</h3>
+            </div>
+            <br>
+
+            <div class="container w-75 ">   
+            <div class="row">
+                    <div class="card col-4" style="width:400px">
+                      <img class="card-img-top" src="rp5.JPG" alt="Card image" style="width:100%">
+                      <div class="card-body">
+                        <h4 class="card-title">Tulungagung</h4>
+                        <p class="card-text">Jl.Pangeran Antasari, Kenayan, Tulungagung</p>
+                        <a href="https://maps.app.goo.gl/o5Qeqnj1yKEF41WH6" class="btn btn-primary">See on Maps</a>
+                      </div>
+                    </div>
+                    
+                    <div class="card col-4" style="width:400px">
+                      <img class="card-img-top" src="rp5.JPG" alt="Card image" style="width:100%">
+                      <div class="card-body">
+                        <h4 class="card-title">Blitar</h4>
+                        <p class="card-text">Jalan TGP(Sampimg Makam)</p>
+                        <a href="https://maps.app.goo.gl/o5Qeqnj1yKEF41WH6" class="btn btn-primary">See on Maps</a>
+                      </div>
+                    </div>
+                
+                    <div class="card col-3 " style="width:400px">
+                        <img class="card-img-top" src="maps.jpeg" alt="Card image" style="width:100%" >
+                        <div class="card-body">
+                          <h4 class="card-title">Kediri</h4>
+                          <p class="card-text">Coming Soon!</p>
+                        </div>
+                      </div>  
+            </div>
+            </div>
+        </div>
+
+        <!--Menu Page-->
+        <div class="row float-left"></div>
+        <div class="menupage" id="menu">
+            <h1 class="text-white ml-auto">OUR MENU</h1>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="rp6.jpg" alt="Los Angeles">
+                    <div class="carousel-caption">
+                      <h3>Nugget Pisang</h3>
+                      <p>Kriuk diluar lembut didalam</p>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="rp8.jpg" alt="Chicago">
+                    <div class="carousel-caption">
+                      <h3>Pisang Cocol</h3>
+                      <p>Tinggal cocol, bye ribet</p>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="rp7.jpg" alt="New York">
+                    <div class="carousel-caption">
+                      <h3>Pisang Coklat</h3>
+                      <p>Kulit yang crispy dan enak</p>
+                    </div>   
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+        </div>
+        </div>
+
+
+    </div>
+
+    <footer id="contactpage">
+        <div class="contactpage" id="contact">
+            <div class="contact_form">
+              <h1 class="contact__title font-semibold text-lg mx-auto">Kirimkan kami pesan</h1>
+              <div class="flex flex-col mt-4">
+                <label for="nama">Nama</label>
+                <input class="form-control" placeholder="Masukkan nama anda disini" id="nama">
+              </div>
+              
+              <div class="flex flex-col mt-4">
+                <label for="nama">Alamat</label>
+                <input class="form-control" placeholder="Masukkan alamat anda disini" id="nama">
+              </div>
+
+              <div class="flex flex-col mt-4">
+                <label for="nama">E-mail</label>
+                <input class="form-control" placeholder="Masukkan email anda disini" id="nama">
+              </div>
+
+              <div class="flex flex-col mt-4">
+                <label for="nama">Instagram</label>
+                <input class="form-control" placeholder="Masukkan Instagram anda disini" id="nama">
+              </div>
+              
+              <div class="flex flex-col mt-4">
+                <label for="nama">Pesan</label>
+                <input class="form-control" placeholder="Masukkan pesan anda disini" id="nama">
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </footer>
+
+    <div class="penutup">
+      <h3 class="ml-5 mr-3">Tetap Terhubung!</h3>
+      <p>Promo dan diskon menarik akan kami informasikan</p>
+
+      <p class="ml-5">Sarah Auliannisa(5026221071)</p>
+    </div>
 </body>
-    
-</html>
